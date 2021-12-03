@@ -1,6 +1,6 @@
 
 def question_1_part_1():
-    with  open("input.txt", "r") as text_file:
+    with  open("depth.txt", "r") as text_file:
         depths = text_file.read().splitlines()
         depth_increase=0
         depth_decrease=0
@@ -15,7 +15,7 @@ def question_1_part_1():
     print("Total Times Depth Decreased ", depth_decrease)
 
 def question_1_part_2():
-    with  open("input.txt", "r") as text_file:
+    with  open("depth.txt", "r") as text_file:
         depths = text_file.read().splitlines()
         depth_increase=0
         depth_decrease=0
@@ -31,7 +31,7 @@ def question_1_part_2():
 
 
 def question_1_simple():
-    data = [int(x) for x in open("input.txt", "r")]
+    data = [int(x) for x in open("depth.txt", "r")]
     print("Part 1:", sum([data[i] > data[i-1] for i in range(1, len(data))]))
     print("Part 2:", sum([data[i] > data[i-3] for i in range(3, len(data))]))
 
